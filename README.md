@@ -40,11 +40,33 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
 ### 5. PyCharm 설치
 
    - Ubuntu 22.04 terminal에서 아래 Jetbrains 홈페이지에서 리눅스 버전의 PyCharm을 다운로드
-   - 홈디렉토리에서 download 폴더를 생성
-   - cd download
+   - 홈디렉토리에서 아래 명령어들을 입력
    - wget https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.1.tar.gz #다운로드
    - tar xvf pycharm-professional-2024.1.1.tar.gz
    - cd pycharm-2024.1.1/bin
-   - sh pycharm.sh
+   - sh pycharm.sh #파이참 실행
    - 학교 이메일(@kunsan.ac.kr)로 만든 JetBrains Account를 이용해서 activate 실행
-   - 
+   - 웹브라우저가 작동하지 않을 경우에는 trial 버전으로 먼저 실행 후 나중에 activate 실행
+
+### 6. PyCharm에서 ROS2 환경의 Python 설정 방법
+   
+   - PyCharm 실행 후 File-Settings-Project:ProjectName-Python Interpreter를 선택
+   - Python Interpreter의 오른쪽에 있는 Add Interpreter를 선택하여 Add Local Interpreter를 선택
+   - 왼쪽 메뉴에서 System Interpreter를 선택하고 Interpreter에서 /usr/bin/python3를 선택
+   - 터미널에서 home directory로 이동 cd ~
+
+### 7. PyCharm에서 JetBrains 계정 활성화 방법
+
+   - Ubuntu 22.04 terminal에서 아래 명령어들을 순서대로 입력
+   (1) 웹브라우저인 firefox 설치
+   - sudo apt update
+   - sudo apt upgrade
+   - sudo apt install firefox
+   - firefox &
+
+   (2) 웹브라우저 firefox 실행 확인 후 PyCharm에서의 설정
+   - 파이참 실행 후 File-Settings-Tools-Web Browsers and Preview에서 firefox의 Path를 /usr/bin/firefox로 수정
+   - 파이참 실행 후 File-Settings-Settings Sync 메뉴에서 Login with JetBrains Account를 실행하여 license activation
+   - 로그인을 위한 대화창이 뜨면 버튼을 클릭하여 JetBrains 로그인 페이지로 이동
+   - 학교계정 이메일과 JetBrains에 가입할 때 사용한 비밀번호를 입력하면 Professional version activation 완료
+     
