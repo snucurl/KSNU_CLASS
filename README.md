@@ -70,3 +70,24 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
    - 로그인을 위한 대화창이 뜨면 버튼을 클릭하여 JetBrains 로그인 페이지로 이동
    - 학교계정 이메일과 JetBrains에 가입할 때 사용한 비밀번호를 입력하면 Professional version activation 완료
      
+### 8. GitHub 계정 생성
+
+   - https://github.com/ 으로 이동
+   - 본인의 계정을 새로 생성
+   - public repository를 생성해서 작성한 코드를 commit
+
+### 9. Source codes 다운로드
+
+   - Ubuntu 22.04 terminal에서 아래의 명령어를 수행
+   - sudo apt update
+   - sudo apt install git
+   - git --version
+   - git config --global user.name "본인 계정"
+   - git config --global user.email "본인 이메일 주소"
+   - sudo git config --global color.ui "auto"
+   - git config --list
+   - git clone https://github.com/robotpilot/ros2-seminar-examples.git
+   - 다운로드 완료 후 아래 명령어로 필요한 package만 복사
+   - cp -r ~/ros2-seminar-examples/my_first_ros_rclpy_pkg ~/robot_ws/src/my_first_ros_rclpy_pkg
+   - cd ~/robot_ws/src/my_first_ros_rclpy_pkg
+   - ll
