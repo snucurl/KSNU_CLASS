@@ -91,3 +91,17 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
    - cp -r ~/ros2-seminar-examples/my_first_ros_rclpy_pkg ~/robot_ws/src/my_first_ros_rclpy_pkg
    - cd ~/robot_ws/src/my_first_ros_rclpy_pkg
    - ll
+
+### 10. PyCharm에서 ROS2 패키지 빌드
+
+   - 파이참 실행 후 File-Settings-Tools-External Tools를 선택
+   - "+" 기호를 눌러 새로운 External Tools 적용
+   - ![image](https://github.com/snucurl/KSNU_CLASS/assets/144347449/f7318d80-8c15-4a21-9757-7687f17470b3)
+   - 이후 프로젝트 명에서 우클릭하여 External Tools-Colcon Build를 선택하여 빌드함
+   - 빌드 이후에는 Ubuntu 22.04 터미널에서 작업
+   - source ~/robot_ws/install/local_setup.bash #빌드되어 설치된 패키지를 등록
+   - ros2 run my_first_ros_rclpy_pkg helloworld_subscriber  #subscriber 실행
+   - 새로운 터미널을 연 다음 
+   - ros2 run my_first_ros_rclpy_pkg helloworld_publisher # publisher 실행
+
+
