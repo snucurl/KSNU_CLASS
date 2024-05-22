@@ -34,6 +34,17 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
 
 ### 4. ROS2-Humble 설치
 
-   - Ubuntu 22.04 terminal에서 아래 동영상을 보고 따라하면 됨
+   - Ubuntu 22.04 terminal에서 아래 ROS2 Documentation 페이지의 installation 메뉴를 참고하여 설치하면 됨
+   - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
+     
+### 5. PyCharm 설치
 
-   - [ROS2 Humble 설치 유튜브 동영상](https://www.youtube.com/watch?v=F3n0SMAFheM)
+   - Ubuntu 22.04 terminal에서 아래 Jetbrains 홈페이지에서 리눅스 버전의 PyCharm을 다운로드
+   - 홈디렉토리에서 download 폴더를 생성
+   - cd download
+   - wget https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.1.tar.gz #다운로드
+   - tar xvf pycharm-professional-2024.1.1.tar.gz
+   - cd pycharm-2024.1.1/bin
+   - sh pycharm.sh
+   - 학교 이메일(@kunsan.ac.kr)로 만든 JetBrains Account를 이용해서 activate 실행
+   - 
