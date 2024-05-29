@@ -65,6 +65,7 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
    - firefox &
 
    (2) 웹브라우저 firefox 실행 확인 후 PyCharm에서의 설정
+   - 먼저 파이참 실행 후 File-Settings-Tools-Web Browsers and Preview에서chrome을 체크 해제한 다음 아래의 Apply 버튼을 눌러서 firefox 웹브라우저가 작동하는지 확인하고 작동하지 않을 경우 아래 절차대로 따른다
    - 파이참 실행 후 File-Settings-Tools-Web Browsers and Preview에서 firefox의 Path를 /usr/bin/firefox로 수정
    - 파이참 실행 후 File-Settings-Settings Sync 메뉴에서 Login with JetBrains Account를 실행하여 license activation
    - 로그인을 위한 대화창이 뜨면 버튼을 클릭하여 JetBrains 로그인 페이지로 이동
