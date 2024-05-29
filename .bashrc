@@ -19,7 +19,7 @@ export RCUTILS_COLORIZED_OUTPUT=1
 export RCUTILS_LOGGING_USE_STDOUT=0
 export RCUTILS_LOGGING_BUFFERED_STREAM=0  
 
-alias cw='cd ~/robot_ws
+alias cw='cd ~/robot_ws'
 alias cs='cd ~/robot_ws/src'
 alias ccd=`colcon_cd'
 alias cb='cd ~/robot ws && colcon build --symlink-install'
