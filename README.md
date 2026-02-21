@@ -13,8 +13,6 @@ Windows 11에서 WSL2(Windows Subsystem for Linux)를 설치하고 Ubuntu 22.04�
 
 ### 2. PowerShell에서의 commands
    
-   - wsl --install
-   
    - wsl --list --online
    
    - wsl --install -d Ubuntu-22.04
